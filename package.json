@@ -1,0 +1,19 @@
+{
+  "name": "default-func",
+  "version": "0.0.1",
+  "description": "Common functionality in website development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ura2rist/default-func.git"
+  },
+  "author": "ura2rist",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ura2rist/default-func/issues"
+  },
+  "homepage": "https://github.com/ura2rist/default-func#readme"
+}

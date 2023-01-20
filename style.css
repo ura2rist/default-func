@@ -1,0 +1,80 @@
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.df-lock {
+  overflow: hidden;
+}
+
+.df-modal {
+  position: fixed;
+  padding: 20px;
+  inset: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0 , 0);
+  pointer-events: none;
+  transition: background-color 0.4s ease;
+}
+
+.df-modal__wrapper {
+  position: relative;
+  width: max-content;
+  max-width: 800px;
+  min-width: 100px;
+  min-height: 50px;
+  background-color: #ffffff;
+  padding: 30px 10px 20px 10px;
+  border-radius: 10px;
+  transform: translateY(-30px);
+  opacity: 0;
+  box-shadow: 0 1px 10px 5px rgb(0, 0, 0, 0.58);
+  transition: opacity 0.4s ease, transform 0.6s ease;
+  will-change: transform;
+}
+
+.df-modal__content-wrapper {
+  overflow: auto;
+  max-height: 85vh;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.df-modal__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.df-modal__line {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #000000;
+}
+
+.df-modal__line:first-child {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.df-modal__line:last-child {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.df-modal_active {
+  pointer-events: auto;
+  background-color: rgba(0, 0, 0 , 0.4);
+}
+
+.df-modal_active .df-modal__wrapper {
+  opacity: 1;
+  transform: translateY(0);
+}
